@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.menu {
+    width: 100%;
+    height: 100px;
+    background-color:#529950;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #00000024;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    user-select: none;
+}
+
+body {
+    background-color: #8fca8d;
+}
+
+.img {
+    width: 170px;
+    height: auto;
+    position: absolute;
+    transition: .5s;
+}
+
+.anya {
+    top: 600px;
+    left: 140px;
+}
+
+.matvey {
+    right: 140px;
+    top: 300px;
+}
+
+.bohdan {
+    left: 140px;
+    top: 120px;
+}
+
+.downloadButton {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #529950;
+    border: 4px solid #468345;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 121px;
+    transition: .5s;
+    user-select: none;
+}
+
+.downloadButton:hover {
+    transform: translateY(-20px);
+    border: 4px solid #366135;
+    background-color: #447442;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main {
+    justify-content: center;
+    display: flex;
+}
+
+.cloud {
+    background-image: url(img/press.png);
+    width: 303px;
+    height: auto;
+    background-size: contain;
+    opacity: 0;
+    position: absolute;
+    top: 320px;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+.container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.become {
+    padding: 10px;
+    position: absolute;
+    color: white;
+    border: 2px solid #366135;
+    border-radius: 15px;
+    background-color: #529950;
+    top: 120px;
+    user-select: none;
+}
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color:#529950;
+    display: block;
+    justify-content: center;
+    border-top: 3px solid #00000024;
+    position: absolute;
+    top: 867px;
+    align-items: center;
+}
+
+.footer-p {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 120px;
+    top: 40px;
+    user-select: none;
+    transition: .5s;
+}
+
+.footerCon {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.qr {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 2px;
+    border: 3px solid #366135;
+}
+
+
+/* slider */
+
+.slider {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.img1 {
+    width: 600px;
+    height: 350px;
+    margin-top: 150px;
+    transition: .5s;
+    position: relative;
+    background-size: cover;
+    border: 4px solid #366135;
+    border-radius: 15px;
+    display: flex;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-image: url(img/school.png);
+}
+
+.arrow {
+    width: 120px;
+    position: absolute;
+    z-index: 1;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.leftarrow {
+    left: -40px;
+}
+
+.leftarrow:hover {
+    transform: translateX(-20px) scale(1.1);;
+}
+
+.rightarrow {
+    right: -40px;
+}
+
+.rightarrow:hover {
+    transform: translateX(20px) scale(1.1);;
+}
+
+@media screen and (max-width:1300px) {
+    .bohdan,
+    .anya {
+        left:25px;
+        width: 160px;
+    }
+
+    .matvey {
+        right: 25px;
+        width: 160px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .img1 {
+        width: 400px;
+        height: 300px;
+    }
+
+    .bohdan,
+    .anya {
+        left:25px;
+        width: 120px;
+    }
+
+    .matvey {
+        right: 25px;
+        width: 120px;
+    }
+
+
+    .footer-p {
+        right: 20px;
+        position: absolute;
+        left: 29px;
+        width: 184px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .bohdan, 
+    .anya,
+    .matvey {
+        top: 745px;
+        width: 90px;
+    }
+    
+    .anya {
+        left: 25%;
+    }
+
+    .bohdan {
+        left: 42%;
+    }
+
+    .matvey {
+        left:60%;
+    }
+
+    .img1 {
+        width: 300px;
+        height: 200px;
+    }
+
+    .arrow {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .img {
+        display: none;
+    }
+
+    .rightarrow {
+        right: -20px;
+    }
+
+    .leftarrow {
+        left: -20px;
+    }
+
+    .arrow {
+        width: 60px;
+    }
+
+    .footer-p {
+        width: 151px;
+        font-size: 16px
+    }
+}
